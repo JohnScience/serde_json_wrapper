@@ -1,0 +1,24 @@
+[package]
+name = "serde_json_wrapper"
+version = "0.1.0"
+edition = "2024"
+authors = ["Dmitrii Demenev <dmitrii@searchless.ca>"]
+description = "Serialize T as a pretty JSON string"
+documentation = "https://docs.rs/serde_json_wrapper"
+readme = "README.md"
+keywords = [
+    "serde",
+    "json",
+    "serialize",
+]
+categories = ["value-formatting"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/JohnScience/serde_json_wrapper"
+
+[dependencies]
+serde = "1"
+serde_json = "1"
+
+[dev-dependencies.serde]
+version = "*"
+features = ["derive"]
